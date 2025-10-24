@@ -20,9 +20,7 @@
     left: 11px;
 }
 
-.list {
-
-}
+.list {}
 
 .list .element {
     border-bottom: 1px dashed #000;
@@ -45,4 +43,55 @@
 .list .element .delete:hover {
     cursor: pointer;
     color: red;
+}
+
+.add-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.add-form input[type="text"] {
+    flex: 1;
+    height: 35px;
+    padding: 0 8px;
+}
+
+.add-form input[type="date"] {
+    width: 170px;
+    height: 35px;
+}
+
+.add-form button {
+    height: 36px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.element .edit-text,
+.element .edit-date {
+    display: none;
+}
+
+.element.editing .text,
+.element.editing .date {
+    display: none;
+}
+
+.element.editing .edit-text,
+.element.editing .edit-date {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+.element.editing .edit-date {
+    width: auto;
+}
+
+.element .text,
+.element .date {
+    cursor: pointer;
 }
