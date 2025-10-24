@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo List</title>
+        <link href="style.css" rel="stylesheet">
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+        <script src="./todo.js"></script>
+        <script>
+            const list = document.getElementById("list");
+            ToDo.draw(list);
+        </script>
+    </head>
+
+    <body>
+        <div class="container" id="toDoContainer">
+            <div class="search">
+                <i class='bx bx-search'></i> 
+                <input name="search" class="search-input" placeholder="Wpisz szukane zadanie...">
+            </div>
+
+            <div class="list" id="list">
+                <div class="element">
+                    <input type="checkbox" class="select">
+                    <div class="text">test</div>
+                    <div class="date"></div>
+                    <div class="delete"><i class='bx bx-trash'></i></div>
+                </div>
+
+                <div class="element">
+                    <input type="checkbox" class="select">
+                    <div class="text">test</div>
+                    <div class="date">2020-10-10</div>
+                    <div class="delete"><i class='bx bx-trash'></i></div>
+                </div>
+
+                <div class="element">
+                    <input type="checkbox" class="select">
+                    <div class="text">test</div>
+                    <div class="date"></div>
+                    <div class="delete"><i class='bx bx-trash'></i></div>
+                </div>
+
+                <div class="element">
+                    <input type="checkbox" class="select">
+                    <div class="text">test</div>
+                    <div class="date"></div>
+                    <div class="delete"><i class='bx bx-trash'></i></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
